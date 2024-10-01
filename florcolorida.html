@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Detalhes da Flor</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html" id="nav_logo">
+                <i class="fa-solid fa-tree"></i> Garden Tropic
+            </a>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+            <a href="contato.html" class="btn-default" id="contact">
+                Entrar em Contato
+            </a>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="product-details">
+            <h2 class="section-title">Detalhes do Produto</h2>
+            <div class="product-image">
+                <img src="src/images/pngtree-beautiful-tropical-flowers-and-leaves-png-image_5605460.png" alt="Flor Colorida">
+            </div>
+            <h3 class="product-title">Flor Colorida</h3>
+            <p class="product-description">Uma flor tropical que tem origem em Recife.</p>
+            <div class="product-price">
+                <h4>1 unidade</h4>
+                <h4>R$25,00</h4>
+            </div>
+            <button class="btn-default" id="add-to-cart">
+                <i class="fa-solid fa-basket-shopping"></i> 
+                <span>Adicionar ao Carrinho</span>
+            </button>
+        </section>
+
+        <section id="shopping-cart">
+            <h2 class="section-title"><i class="fa-solid fa-cart-plus"></i> Carrinho de Compras</h2>
+            <form action="#" method="post" class="form">
+                <label for="buyer-name">Nome Completo</label>
+                <input type="text" id="buyer-name" name="buyer-name" placeholder="Seu nome completo" required>
+
+                <label for="address">Endereço</label>
+                <input type="text" id="address" name="address" placeholder="Seu endereço Completo" required>
+
+                <label for="delivery-method">Entrega</label>
+                <select id="delivery-method" name="delivery-method" required>
+                    <option value="motoboy">Motoboy</option>
+                    <option value="sedex">Sedex</option>
+                    <option value="pac">Pac</option>
+                    <option value="retirada">Retirada na loja</option>
+                </select>
+
+                <label for="payment-method">Método de Pagamento</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Cartão de Crédito</option>
+                    <option value="debit-card">Cartão de Débito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="pix">PIX</option>
+                </select>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço Unitário</th>
+                            <th>Preço Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Flor Colorida</td>
+                            <td>1</td>
+                            <td>R$25,00</td>
+                            <td>R$25,00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td>R$25,00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="purchase-container">
+                    <div class="purchase-section">
+                        <button class="btn-default" id="buy-button">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                            <span>Finalizar Compra</span>
+                        </button>
+                    </div>
+                    <div class="purchase-section">
+                        <button class="btn-default">
+                            <span>Calcular Frete..</span>
+                        </button>
+                    </div>
+                </div>
+            </form> 
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="Onda decorativa no footer">
+        <div id="footer_items">
+            <span id="copyright">&copy; Garden Tropic</span>
+        </div>
+    </footer>
+</body>
+</html>
