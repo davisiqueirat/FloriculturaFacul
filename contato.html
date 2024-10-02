@@ -39,6 +39,7 @@
     </header>
 
     <main id="contact-page">
+        <div class="wrapper">
         <section id="contact-form">
             <h1 class="section-title">
                 Fale Conosco
@@ -50,6 +51,9 @@
 
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required>
 
                 <label for="message">Mensagem</label>
                 <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
@@ -57,47 +61,16 @@
                 <button type="submit" class="btn-default">Enviar</button>
             </form>
             <div class="contact-info">
+                <br>
+                <br>
                 <h2>Informações de Contato</h2>
                 <p><strong>Endereço:</strong> Uninassau, Recife - PE</p>
                 <p><strong>Telefone:</strong> (81) 4002-8922</p>
             </div>
         </section>
-
-        <section id="checkout-form">
-            <h2 class="section-title">
-                Finalizar Pedido
-                <i class="fa-solid fa-cart-plus"></i>
-            </h2>
-            <form action="#" method="post" class="form">
-                <label for="buyer-name">Nome Completo</label>
-                <input type="text" id="buyer-name" name="buyer-name" placeholder="Seu nome completo" required>
-
-                <label for="address">Endereço</label>
-                <input type="text" id="address" name="address" placeholder="Seu endereço Completo" required>
-
-                <label for="delivery-method">Entrega</label>
-                <select id="delivery-method" name="delivery-method" required>
-                    <option value="credit-card">Motoboy</option>
-                    <option value="credit-card">Sedex</option>
-                    <option value="boleto">Pac</option>
-                    <option value="pix">Retirada na loja</option>
-                </select>
-
-                <label for="payment-method">Método de Pagamento</label>
-                <select id="payment-method" name="payment-method" required>
-                    <option value="credit-card">Cartão de Crédito</option>
-                    <option value="credit-card">Cartão de Débito</option>
-                    <option value="boleto">Boleto Bancário</option>
-                    <option value="pix">PIX</option>
-                </select>
-
-                <button type="submit" class="btn-default">Finalizar Compra</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <img src="src/images/wave.svg" alt="">
+    </div>
+    <footer class="contact-footer">
+        <img src="src/images/wave.svg" alt="onda decorativa no footer">
         <div id="footer_items">
             <span id="copyright">&copy; 2024 Garden Tropic</span>
         </div>

@@ -225,10 +225,24 @@ tfoot {
 
 /* contato e pagina de checkout */
 #contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.wrapper {
+    flex-grow: 1; 
     padding: 40px 20px;
 }
 
-#contact-form,
+.contact-footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--color-primary-2);
+}
+
+
+#contact-form, /* antes tinha um menu de checkout na pagina de contato tb,mas achei estranho e deixei so as informações de contato msm.*/
 #checkout-form {
     margin-bottom: 40px;
 }
